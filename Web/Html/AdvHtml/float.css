@@ -1,0 +1,25 @@
+.left{
+    width: 300px;
+    background: #00F;
+    color: #FFF;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+.clear{
+    clear: left;
+}
+.special{
+    width: 400px;
+    background: #00F;
+    color: #FFF;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+span{
+    float: right;
+}
+.right{
+    float: right;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adv. Form</title>
+    <script>
+        function sayHello(){
+            alert("Hello from Button");
+        }
+    </script>
+</head>
+<body>
+    <h2>Advanced Register Form[Html + Css]</h2>
+    <form name="register" action="" method="get">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Username</label>
+            <input type="text" name="username" value="" maxlength="10"><br>
+            <label>Password</label>
+            <input type="password" name="password" value=""><br>
+            <label>Upload ur CV</label>
+            <input type="file"><br>
+            <input type="checkbox">
+            <label>Remember Me</label>
+        </fieldset>
+        <fieldset>
+            <legend>Interact</legend>
+            <label>Your Message</label><br>
+            <textarea rows="6" cols="20"></textarea>
+            <br>
+            <label>Choose ur Country</label><br>
+            <input type="radio" name="country" value="USA">USA<br>
+            <input type="radio" name="country" value="Egypt">Egypt<br>
+            <input type="radio" name="country" value="France">France<br>
+            <select name="type" size="1">
+                <optgroup label="Gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Send Options</legend>
+            <!--Button type used with JS-->
+            <input type="button" name="say Hello" value="jsClickMe" onclick="sayHello()">
+            <input type="submit" value="Signup">
+            <input type="reset" value="Reset"><br>
+            <!-- <label>Choose ur seat</label><br>
+            <input type="image" src="http://placehold.it/100/100" value="Submit">
+            -->
+            <input type="hidden" value="testing">
+        </fieldset>
+    </form>
+    <a href="advFormv2.html">Version2</a>
+</body>
+</html>
