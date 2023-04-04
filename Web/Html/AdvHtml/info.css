@@ -1,0 +1,120 @@
+/* Text Properties
+    direction: rtl 
+    letter-spacing: 10px
+    word-spacing: 10px
+    line-height: 20px
+    text-align: left
+    text-decoration: none, underline, overline, line-through
+    text-indent: 20px
+    text-transform: none, capitalize, uppercase, lowercase
+    white-space: normal, nowrap
+
+Background:
+    background-color: #DDD
+    background-image: url("")
+    background-repeat: repeat(default), no-repeat, repeat-x, repeat-y
+    background-position: 0% 0%(x, y) left top
+    background-attachment: scroll, fixed
+
+    background:none repeat scroll 0 0 #DDD
+Fonts:
+    font-family: Arial, Tahoma, serif
+    font-style: italic
+    font-size: 16px(medium), small, large, x-small, xx-small. x-large, xx-large
+    font-weight: normal(400), bold(700), bolder(900), lighter
+
+    font: italic bold 30px(size)/40px(line-height) Arial, Tahoma, serif
+
+Lists:
+    list-style-type: none, disc
+    list-style-position: inside, outside
+    list-style-image: url("")
+
+Border:
+    border-width:1px;  1px 2px 1px 2px
+    border-style:solid;
+    border-color:#CCC;
+
+    border: 1px solid #CCC
+
+Dimentions:
+        width:auto
+        Height
+        Min-Width
+        Min-Height
+        Max-Width
+        Max-Height
+Position:
+    position:static(default)
+    position:fixed;
+        top:40px;
+        right:200px;
+    position:relative(keeps the workflow space while moving)
+        bottom:150px;
+    position:absolute(Depends on relative box as parent)
+
+Float:
+    float:none, right, left
+    clear float ==>
+        put this after elements that has been floated: 
+            <div class="clear"></div> 
+            style:
+                .clear{clear:both}
+    Another solution with Overflow:
+        div{
+            background:***;
+            overflow:hidden
+        }
+        p{
+            float:left
+        }
+Overflow:
+    overflow:visible, hidden, scroll, auto
+
+Visibility:
+    visibility:visible, hidden(keeps his existence in workflow)
+    display:none(remove his existence from workflow)
+
+Z-Index: layers system - work with elements that has position:
+    position:absolute;
+    top:0;
+    left:0
+    z-index:auto(def), 1.2...etc
+Content:
+    div:after{
+        content:"Hello from Css";
+    }
+Cursor: 
+    cursor:auto, pointer, help, progress, wait, move, text
+
+Outline: = Border, but it doesn't take size from element like padding or margin
+
+Selectors: 
+    > direct child (div > p)
+    * everything
+    + next element
+    ~ siblings
+
+Pseudo Classes: first-letter, first-line, first-child, before, after
+    p:first-letter{
+        font-size:30px
+    }
+    div p:first-child span:first-child{
+        color:#080
+    }
+
+Attributes:
+    a[target="_blank"]{
+        color:#080
+    }
+
+media: 
+    in link rel line as attribute: 
+        <link rel="stylesheet" href="" media="all">
+    or we can specify it in the file itself: 
+        @media screen{
+            p{
+                color:#F00;
+            }
+        }
+*/
